@@ -5,8 +5,8 @@
   "license": "MIT",
   "files": [
     "main.ts",
-    "MAX30102.h",
-    "MAX30102.cpp"
+    "MAX30105.h",
+    "MAX30105.cpp"
   ],
   "dependencies": {
     "core": "*"
