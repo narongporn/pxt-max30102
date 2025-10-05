@@ -1,0 +1,18 @@
+{
+  "name": "MAX30102",
+  "description": "MAX30102 pulse oximeter / heart-rate sensor extension for micro:bit",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "main.ts",
+    "MAX30102.h",
+    "MAX30102.cpp"
+  ],
+  "dependencies": {
+    "core": "*"
+  },
+  "targetVersions": {
+    "target": "microbit"
+  },
+  "supportedTargets": ["microbit"]
+}
