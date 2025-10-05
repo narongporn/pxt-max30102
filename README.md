@@ -1,11 +1,22 @@
-# pxt-max30102
+# MAX30105 MakeCode Extension for micro:bit
 
-Build & install (MakeCode web editor)
 
-Create a new MakeCode for micro:bit project.
+This MakeCode extension allows reading Red, IR, and Green data, plus temperature from the MAX30105 optical sensor.
 
-Click the gear (settings) menu → Extensions → "Import" → "Add package by Git URL".
 
-Paste the repository URL after you push it to GitHub (e.g. https://github.com/<you>/microbit-max30102-makecode-extension).
+## Features
+- Initialize the MAX30105 sensor
+- Read Red, IR, and Green channels
+- Read onboard temperature
 
-The package will be added. You can now use blocks from the max30102 namespace.
+
+## Example (MakeCode)
+```blocks
+max30105.begin()
+basic.forever(function() {
+let red = max30105.red()
+let ir = max30105.ir()
+let green = max30105.green()
+serial.writeNumbers([red, ir, green])
+basic.pause(100)
+})
